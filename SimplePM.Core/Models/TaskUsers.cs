@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SimplePM.Core.Models
 {
-  public class TaskUsers : ITaskUsers
+  public class TaskUsers : IDataTaskUsers
   {
     public int Id { get; set; }
     public string MemberId { get; set; }

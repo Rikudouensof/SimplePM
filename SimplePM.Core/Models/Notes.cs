@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SimplePM.Core.Models
 {
-  public class Notes : INotes
+  public class Notes : IDataNotes
   {
     public int Id { get; set; }
 

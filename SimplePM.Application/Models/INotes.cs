@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimplePM.Application.Models
 {
-  public interface INotes : IBaseModel
+  public interface INotes 
   {
     public int Id { get; set; }
 

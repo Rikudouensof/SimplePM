@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SimplePM.Core.Models
 {
-  public class ProjectRoles : IProjectRoles
+  public class ProjectRoles : IDataProjectRoles
   {
     public int Id { get; set; }
     public string Name { get; set; }

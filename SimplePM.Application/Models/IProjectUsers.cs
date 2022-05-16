@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimplePM.Application.Models
 {
-  public interface IProjectUsers : IBaseModel
+  public interface IProjectUsers 
   {
 
     public int Id { get; set; }

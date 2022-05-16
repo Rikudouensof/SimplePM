@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SimplePM.Core.Models
 {
-  public class BaseModel : IBaseModel
+  public class BaseModel 
   {
     public DateTime DateUpdated { get; set; }
     public string UpdatedBy { get; set; }
