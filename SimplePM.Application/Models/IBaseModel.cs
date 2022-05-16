@@ -11,10 +11,10 @@ namespace SimplePM.Application.Models
 
      DateTime DateUpdated { get; set; }
 
-     string UpdatedBy { get; set; }
+     string UpdatedById { get; set; }
 
-     DateTime CreatedOm { get; set; }
+     DateTime CreatedOn { get; set; }
 
-     string CreatedBy { get; set; }
+     string CreatedById { get; set; }
   }
 }

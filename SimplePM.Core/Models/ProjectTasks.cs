@@ -10,11 +10,20 @@ namespace SimplePM.Core.Models
   public class ProjectTasks : IProjectTasks
   {
     public int Id { get; set; }
-    public int ProjectSchedleId { get; set; }
+    
+
+
     public DateTime TaskDueDate { get; set; }
     public DateTime DateUpdated { get; set; }
-    public string UpdatedBy { get; set; }
-    public DateTime CreatedOm { get; set; }
-    public string CreatedBy { get; set; }
+    public DateTime CreatedOn { get; set; }
+    public string CreatedById { get; set; }
+
+    //Relationship
+
+    public ProjectSchedle ProjectSchedle { get; set; }
+    public int ProjectSchedleId { get; set; }
+
+    public User UpdatedBy { get; set; }
+    public string UpdatedById { get; set; }
   }
 }

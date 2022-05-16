@@ -19,10 +19,20 @@ namespace SimplePM.Core.Models
 
     public bool IsPublic { get; set; }
 
-    public int? ProjectId { get; set; }
+    
+    
+  
     public DateTime DateUpdated { get; set; }
-    public string UpdatedBy { get; set; }
-    public DateTime CreatedOm { get; set; }
-    public string CreatedBy { get; set; }
+    
+    public DateTime CreatedOn { get; set; }
+    public string CreatedById { get; set; }
+
+
+    //Relationships
+    public int? ProjectId { get; set; }
+    public Project Project { get; set; }
+
+    public string UpdatedById { get; set; }
+    public User UpdatedBy { get; set; }
   }
 }

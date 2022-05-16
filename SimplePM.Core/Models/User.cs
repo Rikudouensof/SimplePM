@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SimplePM.Core.Models
 {
-  internal class User : IdentityUser, IUser
+  public class User : IdentityUser, IUser
   {
     public string FirstName { get; set; }
     public string LastName { get; set; }

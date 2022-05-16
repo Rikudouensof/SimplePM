@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace SimplePM.Application.Models
 {
-  public interface ITaskSchedleUsers : IBaseModel
+  public interface ITaskUsers : IBaseModel
   {
 
     public int Id { get; set; }
 
-    public string Member { get; set; }
+    public string MemberId { get; set; }
 
-    public int ProjectId { get; set; }
+    public int ProjectTaskId { get; set; }
 
-    public int ProjectRoleId { get; set; }
   }
 }

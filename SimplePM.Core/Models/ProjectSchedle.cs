@@ -14,10 +14,18 @@ namespace SimplePM.Core.Models
     public string Description { get; set; }
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
-    public int ProjectId { get; set; }
+    
     public DateTime DateUpdated { get; set; }
-    public string UpdatedBy { get; set; }
-    public DateTime CreatedOm { get; set; }
-    public string CreatedBy { get; set; }
+   
+    public DateTime CreatedOn { get; set; }
+    public string CreatedById { get; set; }
+
+    //Relashonship
+
+    public Project Project { get; set; }
+    public int ProjectId { get; set; }
+
+    public User UpdatedBy { get; set; }
+    public string UpdatedById { get; set; }
   }
 }

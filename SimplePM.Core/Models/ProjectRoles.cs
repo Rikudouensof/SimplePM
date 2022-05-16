@@ -13,8 +13,15 @@ namespace SimplePM.Core.Models
     public string Name { get; set; }
     public int ProjectId { get; set; }
     public DateTime DateUpdated { get; set; }
-    public string UpdatedBy { get; set; }
-    public DateTime CreatedOm { get; set; }
-    public string CreatedBy { get; set; }
+  
+
+    public DateTime CreatedOn { get; set; }
+    public string CreatedById { get; set; }
+
+
+
+    //Relationship
+    public User UpdatedBy { get; set; }
+    public string UpdatedById { get; set; }
   }
 }
