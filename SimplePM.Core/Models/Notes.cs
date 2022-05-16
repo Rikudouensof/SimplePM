@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SimplePM.Application.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SimplePM.Core.Models
 {
-  public interface INotes
+  public class Notes : INotes
   {
     public int Id { get; set; }
 
@@ -19,5 +20,9 @@ namespace SimplePM.Core.Models
     public bool IsPublic { get; set; }
 
     public int? ProjectId { get; set; }
+    public DateTime DateUpdated { get; set; }
+    public string UpdatedBy { get; set; }
+    public DateTime CreatedOm { get; set; }
+    public string CreatedBy { get; set; }
   }
 }
